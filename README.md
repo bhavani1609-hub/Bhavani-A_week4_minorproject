@@ -1,11 +1,14 @@
 # Bhavani-A_week4_minorproject
 BingePlay — Advanced SQL Analytics Project
 
+
 A SQL analytics project exploring user behavior, subscription revenue, retention, and churn signals for a simulated streaming platform ("BingePlay"), using MySQL and Python (SQLAlchemy + pandas).
 
 Overview
 
 This project analyzes a relational dataset of ~113,000 records across 5 tables to answer 12 business questions covering revenue, engagement, retention, and churn. The focus is on writing SQL that handles real-world data issues correctly — NULLs, ties, many-to-many joins, and window function edge cases — rather than just producing a number that "looks right."
+
+
 
 Dataset
 Table	Rows	Description
@@ -15,6 +18,8 @@ shows	100	Show metadata — category, language, rating, release year
 watch_sessions	100,351	Individual viewing sessions — device, minutes watched, completion
 ratings	5,000	User ratings (stars) per show
 Tech Stack
+
+
 MySQL — relational database
 Python — SQLAlchemy + pymysql for the DB connection, pandas for result handling
 Jupyter Notebook — analysis and documentation
@@ -44,8 +49,13 @@ How to Run
 Set up a local MySQL instance (or use Google Colab with an in-session MySQL server).
 Load the dataset:
 bash
+
+
+
    mysql -u root -p < "Advanced SQL Data set for MP 4.sql"
 Install Python dependencies:
 bash
+
+
    pip install pymysql sqlalchemy pandas
 Open bingeplay_<yourname>.ipynb and run all cells top to bottom.
